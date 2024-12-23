@@ -5,10 +5,10 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "23898744")  # ⚠️ Required
-    API_HASH  = os.environ.get("API_HASH", "0b13c810c80b548604650cbe3c3db0c3") # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7740337190:AAHQwdPxIfoJtnJEti2vQdngjfpkeZAitOA") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', 'Era_Bot_Support') # ⚠️ Required
+    API_ID    = os.environ.get("API_ID", "26387127")  # ⚠️ Required
+    API_HASH  = os.environ.get("API_HASH", "19718ab7acd97d0f71ada2807ddfe47a") # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8002865915:AAHJcbvW63-w1VMd2JCW9nqwM_HR9QYvV8Y") # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', '@Animes_India_bot') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
@@ -17,16 +17,16 @@ class Config(object):
     DB_NAME  = os.environ.get("DB_NAME","SnowEncoderBot") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "8108281129")) # ⚠️ Required
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002381050327')) # ⚠️ Required
+    ADMIN = int(os.environ.get("ADMIN", "5446367898")) # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002317509038')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
-    START_PIC = os.environ.get("START_PIC", "https://graph.org/file/70fc16fcba8f92685433f-f9125e16c551344ad3.jpg")
+    START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/219c7ce28f8f9262c3477-5ac482fb1d0adadca5.jpg")
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     PORT = int(os.environ.get("PORT", "1980"))
 
-
+    
     caption = """
 **File Name**: {0}
 
